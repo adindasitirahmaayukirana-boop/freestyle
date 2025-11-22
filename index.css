@@ -1,0 +1,48 @@
+.container1 {
+    width: 100%;
+    margin: 0;
+
+    height: 100dvh;
+    background: url("./gambar/perfect-blend-natural-eco-friendly-aesthetics-fresh-green-leaves-gentle-pastel-backdrop-373818182.webp");
+background-size: cover;
+border: 1px solid black;
+
+}
+.navbar {
+    background-color: rgb(6, 44, 6);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.navbar img {
+    height: 90px;
+    width: 90px;
+}
+.press{
+    display: flex;
+    gap: 20px;
+}
+.press button{
+    width: 90px;
+    height: 50px;
+}
+.theme h1{
+    font-size: 100px;
+ font-family: "Old Standard TT", serif;
+  font-weight: 200;
+  font-style: normal;
+  margin: 0;
+  text-align: center;
+}
+
+
+  
+
+
+
