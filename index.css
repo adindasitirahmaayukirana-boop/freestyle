@@ -1,43 +1,42 @@
 .container1 {
-    width: 100%;
-    margin: 0;
+  width: 100%;
+  margin: 0;
+  height: 100dvh;
+  background: url("./gambar/perfect-blend-natural-eco-friendly-aesthetics-fresh-green-leaves-gentle-pastel-backdrop-373818182.webp");
+  background-size: cover;
 
-    height: 100dvh;
-    background: url("./gambar/perfect-blend-natural-eco-friendly-aesthetics-fresh-green-leaves-gentle-pastel-backdrop-373818182.webp");
-background-size: cover;
-border: 1px solid black;
-display: flex;
-gap: 100px;
-justify-content: center;
-padding-top: 140px;
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  padding-top: 140px;
 }
 .navbar {
-    background-color: rgb(6, 44, 6);
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: rgb(6, 44, 6);
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 .navbar img {
-    height: 90px;
-    width: 90px;
+  height: 90px;
+  width: 90px;
 }
-.press{
-    display: flex;
-    gap: 20px;
+.press {
+  display: flex;
+  gap: 20px;
 }
-.press button{
-    width: 90px;
-    height: 50px;
+.press a {
+ padding: 10px 20px;
+ background: white;
 }
-.theme h1{
-    font-size: 100px;
- font-family: "Old Standard TT", serif;
+.theme h1 {
+  font-size: 100px;
+  font-family: "Old Standard TT", serif;
   font-weight: 200;
   font-style: normal;
   margin: 0;
@@ -45,14 +44,26 @@ body {
   padding-left: 100px;
 }
 .container1 img {
-    width: 480px;
-    height: 300px;
-
+  width: 480px;
+  height: 300px;
 }
 .navbar div {
-    display:flex;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+body {
+ background-color: rgb(6, 44, 6);
+}
+.container2 {
     color: white;
-    justify-content: center;
+}
+
+.container2 img {
+    width: 500px;
+    height: 330px;
     align-items: center;
-    gap: 20px;
+    justify-content: center;
 }
