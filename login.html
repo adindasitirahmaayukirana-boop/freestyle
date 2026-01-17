@@ -1,13 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>
-        
-    </h1>
-</body>
+    <link rel="stylesheet" href="./login.css" />
+  </head>
+  <body>
+    <div class="containerlogin">
+      <img
+        src="./gambar/Screenshot_2025-10-25_163816-removebg-preview (1).png"
+        alt=""
+      />
+
+      <div>
+        <form id="registerform">
+          <div>
+            <h1>Register</h1>
+          </div>
+          <div>
+            <label for=""> email</label>
+            <input type="text" id="email" />
+          </div>
+          <div class="">
+            <label for="">Username :</label>
+            <input type="text" id="username" />
+          </div>
+          <div class="">
+            <label for="">Password :</label>
+            <input type="text" id="password" />
+          </div>
+          <button type="submit">Register</button>
+          <div id="massage"></div>
+        </form>
+      </div>
+    </div>
+    <script>
+      document
+        .getElementById("registerform")
+        .addEventListener("submit", function (e) {
+          e.preventDefault;
+          const username = document.getElementById("username").value;
+          const password = document.getElementById("password").value;
+          const massage = document.getElementById("massage");
+          const email = document.getElementById("email").value;
+
+          const users = JSON.parse(localStorage.getItem("users")) || [];
+          const isemailexist = users.find((user) => user.email === email);
+          if (isemailexist) {
+            massage.style.color = "red";
+            massage.innerText = "email sudah terdaftar";
+            alert("email sudah terdaftar");
+            return;
+          }
+
+          const newusers = {
+                 username: username,
+            email: email,
+            password: password,
+          }
+          users.push(newusers);
+          localStorage.setItem("users", JSON.stringify(users));
+          massage.style.color = "green";
+          massage.innerText = "Succes";
+           alert("success");
+          document.getElementById("registerform").reset();
+        });
+    </script>
+  </body>
 </html>

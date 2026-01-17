@@ -1,0 +1,52 @@
+.containerlogin h1 {
+ font-size: 20px;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body {
+    background-color: rgba(42, 80, 68, 0.997);
+
+    /* max-height: 1dvh; */
+    height: 100vh;
+}
+.containerlogin{
+ width: 100%;
+ height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+    
+}
+
+.containerlogin  > div{
+    background-color: white;
+    max-height: 500px;
+    width: 500px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.containerlogin button {
+   
+    color: rgb(0, 0, 0);
+    background: linear-gradient(to right,rgb(158, 197, 158) 0%, rgba(42, 80, 68, 0.997) 100%
+    );
+    border: none;
+    padding: 10px 20px ;
+    color: azure;
+    border-radius: 5px;
+}
+
+.containerlogin form {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    gap: 10px;
+
+
+}
+
+form input{
+    width: 200px;
+}
