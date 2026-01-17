@@ -59,11 +59,29 @@ body {
 }
 .container2 {
     color: white;
+    border-color: aquamarine;
+    padding: 10px;
+    display: flex;
+    justify-items: center;
+    gap: 15px;
+    width: 150;
 }
 
-.container2 img {
-    width: 500px;
-    height: 330px;
-    align-items: center;
-    justify-content: center;
+.container2 .card{
+border: 1px solid grey;
+padding: 10px;
+
+}
+
+section{
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container2 .card:hover{
+border:1px solid white;
+transform: translateY(-10px);
+transition: all 200ms ease-in-out;
 }
